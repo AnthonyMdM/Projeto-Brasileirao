@@ -1,0 +1,75 @@
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding-bottom: 5rem;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.linhaImg {
+  display: flex;
+  justify-self: start;
+  gap: 0.5rem;
+  align-items: center;
+}
+.linha {
+  display: flex;
+  justify-self: start;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.titulo {
+  color: white;
+  font-family: var(--font-roboto);
+  font-size: 3rem;
+  margin: 0;
+}
+.lista {
+  justify-items: center;
+  align-items: center;
+  grid-row: 2;
+  grid-column: 1/-1;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  margin: 0 1rem;
+  /* margin-top: 1rem; */
+  gap: 4rem;
+}
+
+.dados h2 {
+  background: #5c5c5c;
+  color: white;
+  padding: 0 3rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.dados {
+  display: flex;
+  place-content: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.grafico .dados {
+  margin-bottom: 0;
+}
+.grafico {
+  margin-top: 3rem;
+}
+.graficos > * {
+  width: 100%;
+}
+.graficos {
+  display: flex;
+  width: 100%;
+  place-content: center;
+}

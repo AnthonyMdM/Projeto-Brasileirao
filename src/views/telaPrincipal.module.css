@@ -1,0 +1,84 @@
+.pagina {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto max-content 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease;
+}
+
+.titulo {
+  display: flex;
+  grid-column: 1/3;
+  grid-row: 1;
+  place-self: end;
+  background-color: #3366ff;
+  color: white;
+  justify-self: left;
+  justify-items: center;
+  align-items: center;
+  place-content: center;
+  font-family: var(--font-oswald);
+  font-size: 2rem; /* Diminuído */
+  font-weight: 700;
+  padding-right: 15rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 1.5rem 0;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+  width: 500px;
+  line-height: 1.2;
+  text-align: center;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.tabela li {
+  padding: 0.5rem;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tabela {
+  grid-column: 2;
+  max-height: 80vh;
+  grid-row: 2;
+  width: 80%;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.tabela::-webkit-scrollbar {
+  width: 0px;
+}
+
+.botaoFixado {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  gap: 1rem;
+  display: flex;
+  padding: 0 3rem;
+  z-index: 999;
+  box-sizing: border-box;
+}
+.imgLeft {
+  grid-column: 1;
+  grid-row: 2;
+  background-size: cover;
+  place-self: center;
+  margin-left: 10rem;
+  margin-bottom: 10rem;
+}

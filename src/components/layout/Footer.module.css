@@ -1,0 +1,15 @@
+.container {
+  height: 80px;
+  background: #3366ff;
+  display: flex;
+  place-content: center;
+  /* margin-top: 60px; */
+}
+
+.texto {
+  font-family: var(--font-roboto);
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #fafafa;
+}
