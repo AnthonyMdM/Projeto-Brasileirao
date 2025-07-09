@@ -9,7 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const PizzaChart = dynamic(() => import("@/components/modal/graficoModal"), {
-  ssr: false, // necessário por depender do DOM
+  ssr: false,
 });
 
 export default function TelaInfo({ id }: { id: string }) {
@@ -46,7 +46,6 @@ export default function TelaInfo({ id }: { id: string }) {
               alt="Return to home"
               width={50}
               height={50}
-              // onClick={handleOutsideClick}
             />
           </Link>
           <ImagensTime

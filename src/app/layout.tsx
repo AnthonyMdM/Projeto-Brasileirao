@@ -6,7 +6,7 @@ import { UserContextProvider } from "@/context/useContex";
 import Footer from "@/components/layout/Footer";
 
 const roboto = Roboto({
-  weight: ["400", "700"], // ou outras
+  weight: ["400", "700"], 
   subsets: ["latin"],
   variable: "--font-roboto",
 });
@@ -18,7 +18,7 @@ const oswald = Oswald({
 });
 
 const poppins = Poppins({
-  weight: ["400", "700"], // ou outras
+  weight: ["400", "700"], 
   subsets: ["latin"],
   variable: "--font-poppins",
 });

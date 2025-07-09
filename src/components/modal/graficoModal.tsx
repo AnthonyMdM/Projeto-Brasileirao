@@ -10,12 +10,12 @@ import {
 } from "chart.js";
 import { Pie } from "react-chartjs-2";
 
-// Registrar os elementos necessários
+
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const options: ChartOptions<"pie"> = {
   responsive: true,
-  // maintainAspectRatio: false,
+
   plugins: {
     legend: {
       position: "bottom",
@@ -45,7 +45,6 @@ export default function PizzaChart({
     ? (+dadosFiltrados?.Losses / +dadosFiltrados?.Games) * 100
     : 0;
 
-  // Verificação de segurança para evitar erro se não encontrar dados
   if (!dadosFiltrados) {
     return <p>Dados não encontrados para {label}</p>;
   }

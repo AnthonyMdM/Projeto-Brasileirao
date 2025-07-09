@@ -113,8 +113,8 @@ export const infoTime: Record<string, TimeInfo> = {
   Criciúma: {
     url: "Criciuma",
     caminho: "/img/criciuma.png",
-    corPrincipal: "#FFD700", // amarelo ouro
-    corSecundaria: "#000000", // preto
+    corPrincipal: "#FFD700", 
+    corSecundaria: "#000000", 
   },
   Goianiense: {
     url: "Atletico-Goianiense",
