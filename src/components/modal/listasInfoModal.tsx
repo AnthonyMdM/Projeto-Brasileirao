@@ -14,7 +14,7 @@ export default function Listas({
     (item) => item.Scope?.trim().toLowerCase() === values.trim().toLowerCase()
   );
   return (
-    <section>
+    <div className={styles.bloco}>
       <h2 className={styles.subtitle}>{label}</h2>
       <ul className={styles.listas}>
         <li className={styles.itens}>
@@ -44,6 +44,6 @@ export default function Listas({
           </p>
         </li>
       </ul>
-    </section>
+    </div>
   );
 }

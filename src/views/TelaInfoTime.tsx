@@ -37,7 +37,7 @@ export default function TelaInfo({ id }: { id: string }) {
   const cor = info.corPrincipal?.trim();
   console.log(loading);
   return (
-    <div className={styles.conteudo}>
+    <div className={styles.container}>
       <div className={styles.linha} style={{ backgroundColor: cor }}>
         <div className={styles.linhaImg}>
           <Link href={"/"}>
@@ -57,36 +57,49 @@ export default function TelaInfo({ id }: { id: string }) {
         </div>
         <h1 className={styles.titulo}>{nomeOriginal.toUpperCase()}</h1>
       </div>
-      <div className={styles.dados}>
-        <h2>
-          Dados do {nomeOriginal} na temporada de {value}
-        </h2>
-      </div>
-      <div className={styles.lista}>
-        <Listas values="Total" label="Valores Totais" data={dadosFiltrados} />
-        <Listas values="Home" label="Dentro de Casa" data={dadosFiltrados} />
-        <Listas values="Away" label="Fora de Casa" data={dadosFiltrados} />
-      </div>
-      <div className={styles.grafico}>
+      <div className={styles.conteudo}>
         <div className={styles.dados}>
-          <h2>Estatísticas</h2>
+          <div className={styles.teste}>
+            <h2 className={styles.subtitle}>
+              Dados do {nomeOriginal} na temporada de {value}
+            </h2>
+          </div>
+          <div className={styles.lista}>
+            <Listas
+              values="Total"
+              label="Valores Totais"
+              data={dadosFiltrados}
+            />
+            <Listas
+              values="Home"
+              label="Dentro de Casa"
+              data={dadosFiltrados}
+            />
+            <Listas values="Away" label="Fora de Casa" data={dadosFiltrados} />
+          </div>
         </div>
-        <div className={styles.graficos}>
-          <PizzaChart
-            values="Total"
-            label="Valores Totais"
-            data={dadosFiltrados}
-          />
-          <PizzaChart
-            values="Home"
-            label="Dentro de Casa"
-            data={dadosFiltrados}
-          />
-          <PizzaChart
-            values="Away"
-            label="Fora de Casa"
-            data={dadosFiltrados}
-          />
+
+        <div className={styles.dados}>
+          <div className={styles.teste}>
+            <h2 className={styles.subtitle}>Estatísticas</h2>
+          </div>
+          <div className={styles.graficos}>
+            <PizzaChart
+              values="Total"
+              label="Valores Totais"
+              data={dadosFiltrados}
+            />
+            <PizzaChart
+              values="Home"
+              label="Dentro de Casa"
+              data={dadosFiltrados}
+            />
+            <PizzaChart
+              values="Away"
+              label="Fora de Casa"
+              data={dadosFiltrados}
+            />
+          </div>
         </div>
       </div>
     </div>

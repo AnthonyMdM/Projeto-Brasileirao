@@ -1,5 +1,5 @@
 .pagina {
-  height: 100vh;
+  height: auto;
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-rows: auto max-content 1fr;
@@ -58,6 +58,7 @@
   border-radius: 5px;
   background-color: #1e1e1e;
   color: #e0e0e0;
+  margin-bottom: 20px;
 }
 
 .tabela::-webkit-scrollbar {
@@ -81,4 +82,32 @@
   place-self: center;
   margin-left: 10rem;
   margin-bottom: 10rem;
+}
+@media (max-width: 40rem) {
+  .pagina {
+    grid-template-columns: 1fr;
+    place-content: center;
+    place-items: center;
+    /* margin: 1rem; */
+  }
+  .tabela {
+    grid-column: 1;
+    place-self: center;
+    width: 90%;
+  }
+  .titulo {
+    grid-column: 1;
+    padding: 0;
+    justify-items: start;
+    justify-content: start;
+    padding-left: 1rem;
+    width: 100%;
+  }
+  .imgLeft {
+    display: none;
+  }
+.tabela li {
+  padding: 0.2rem;
+
+}
 }

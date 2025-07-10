@@ -1,4 +1,4 @@
-.conteudo {
+.container {
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -6,8 +6,13 @@
   width: 100%;
   height: auto;
   border-radius: 5px;
+  box-sizing: border-box;
 }
-
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .linhaImg {
   display: flex;
   justify-self: start;
@@ -16,7 +21,7 @@
 }
 .linha {
   display: flex;
-  justify-self: start;
+  justify-items: start;
   gap: 1rem;
   width: 100%;
   align-items: center;
@@ -31,11 +36,11 @@
   margin: 0;
 }
 .lista {
+  display: grid;
   justify-items: center;
   align-items: center;
   grid-row: 2;
   grid-column: 1/-1;
-  display: grid;
   width: 100%;
   grid-template-columns: repeat(3, auto);
   justify-content: center;
@@ -44,26 +49,24 @@
   gap: 4rem;
 }
 
-.dados h2 {
+.subtitle {
+  width: auto;
   background: #5c5c5c;
   color: white;
-  padding: 0 3rem;
   border-radius: 5px;
   text-align: center;
   font-size: 2.5rem;
+  padding: 0 1rem;  
 }
 .dados {
   display: flex;
-  place-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  margin-bottom: 1.5rem;
-}
-
-.grafico .dados {
+  width: 90%;
   margin-bottom: 0;
-}
-.grafico {
-  margin-top: 3rem;
+  margin-top: 1rem;
+  box-sizing: border-box;
 }
 .graficos > * {
   width: 100%;
@@ -72,4 +75,45 @@
   display: flex;
   width: 100%;
   place-content: center;
+}
+
+@media (max-width: 40rem) {
+  .conteudo {
+    box-sizing: border-box;
+  }
+  .dados {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Alinhe com o container principal */
+  }
+
+  .lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lista > * {
+    width: 100%;
+    max-width: 400px;
+  }
+  .subtitle {
+    font-size: 1.75rem;
+    width: fit-content;
+    margin: 1rem;
+  }
+  .teste {
+    display: flex;
+    place-content: center;
+  }
+  .graficos {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .grafico {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
