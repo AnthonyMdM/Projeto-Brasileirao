@@ -22,6 +22,6 @@ Este repositório contém um site interativo desenvolvido com **Next.js**, **Typ
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [CSS Modules](https://nextjs.org/docs/basic-features/built-in-css-support)
-- [Vercel](https://vercel.com/) (hospedagem)
+- [Vercel](https://vercel.com/)
 
 ---
