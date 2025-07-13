@@ -83,7 +83,7 @@
   margin-left: 10rem;
   margin-bottom: 10rem;
 }
-@media (max-width: 40rem) {
+@media (max-width: 56rem) {
   .pagina {
     grid-template-columns: 1fr;
     place-content: center;
@@ -106,8 +106,14 @@
   .imgLeft {
     display: none;
   }
-.tabela li {
-  padding: 0.2rem;
+  .tabela li {
+    padding: 0.2rem;
+  }
+}
+@media (max-width: 30rem) {
+  .tabela {
+    width: 90%;
+  }
+}
 
-}
-}
+

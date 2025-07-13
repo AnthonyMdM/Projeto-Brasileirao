@@ -44,7 +44,7 @@
   white-space: nowrap;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 56rem) {
   .bloco {
     width: 100%;
     max-width: 400px; /* ou 100%, se preferir ocupar tudo */

@@ -38,14 +38,17 @@ export default function TabelaLista({
             className={styles.link}
             prefetch={false}
           >
-            <div style={{ display: "flex", gap: ".75rem", height: "auto" }}>
+            <div className={styles.time}>
               <div className={styles.classificacao}>
                 <p>{t.Order}º</p>
                 <ImagensTime
                   time={t.ShortName}
                   width={35}
                   height={35}
-                  style={{ objectFit: "contain" }}
+                  style={{
+                    objectFit: "contain",
+                    display: "block",
+                  }}
                 />
               </div>
               <p className={styles.noWrap}>

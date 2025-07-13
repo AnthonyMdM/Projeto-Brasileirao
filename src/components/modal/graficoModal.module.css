@@ -3,20 +3,26 @@
   flex-direction: column;
   align-items: center;
 }
+
+.title > .subtitle {
+  width: fit-content;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+}
 .title {
   font-family: var(--font-poppins);
   display: flex;
   place-content: center;
   width: 100%;
 }
+
 .subtitle {
   font-family: var(--font-poppins);
   background: #5c5c5c;
   color: white;
   border-radius: 5px;
-  padding: 0 2rem;
   font-size: 1.5rem;
-  width: fit-content;
+  width: 100%;
   text-align: center;
 }
 
@@ -48,4 +54,14 @@
   border: 1px solid black;
   grid-template-rows: auto auto auto 1fr;
   text-align: center;
+  width: auto;
+}
+@media (max-width: 56rem) {
+  .estatisticaBox {
+    width: 80%;
+  }
+  .subtitle {
+    width: 100%;
+    padding: 0;
+  }
 }

@@ -4,7 +4,7 @@ import { TABELA } from "@/functions/api";
 import { Standing } from "../context/useContex";
 
 export default async function fetchTabela(
-  ano: number
+  ano: number = new Date().getFullYear()
 ): Promise<{ data: Standing[] | null; error: string | null }> {
   try {
     const { url } = TABELA(String(ano));
