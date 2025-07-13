@@ -1,9 +1,27 @@
-# Tabela do Brasileirão
+# 🏆 Tabela do Brasileirão
+
 ## 📌 Descrição
-Este projeto é um site interativo desenvolvido com Next.js que exibe a tabela do Campeonato Brasileiro de Futebol (Brasileirão) de diferentes anos. A aplicação permite visualizar classificações dos clubes, estatísticas e outros dados relevantes de temporadas passadas da principal competição nacional de futebol.
+
+Este repositório contém um site interativo desenvolvido com **Next.js**, **TypeScript** e **CSS**, que exibe a **tabela do Campeonato Brasileiro de Futebol (Brasileirão)**. A aplicação permite visualizar a classificação dos clubes, estatísticas e outros dados relevantes das últimas edições do principal torneio nacional de futebol.
+
+🔗 Acesse o site em produção:  
+[Brasileirão
+](https://projeto-brasileirao-xi.vercel.app/)
+
+---
 
 ## ⚠️ Observações e Limitações
 
-- 📱 **Responsividade em desenvolvimento**: A interface ainda **não está totalmente responsiva**, podendo apresentar problemas de visualização em dispositivos móveis ou telas menores.
-- 📊 **Dados limitados**: Devido a restrições da API gratuita utilizada, os dados disponíveis são apenas do **campeonato atual** e do **ano anterior**.
-- ⏳ **Projeto em construção**: Este projeto está em desenvolvimento contínuo. Novas funcionalidades, melhorias de layout e suporte a temporadas passadas estão nos planos para futuras atualizações.
+- 📊 **Cobertura de dados**: Devido a limitações da API gratuita utilizada, os dados atualmente disponíveis se restringem ao **campeonato vigente** e ao **ano anterior**.
+- 🚧 **Em desenvolvimento**: Este projeto está em evolução contínua. Futuras atualizações incluirão melhorias na interface, suporte a temporadas anteriores e novas funcionalidades.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [CSS Modules](https://nextjs.org/docs/basic-features/built-in-css-support)
+- [Vercel](https://vercel.com/)
+
+---
